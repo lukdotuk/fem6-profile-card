@@ -1,0 +1,107 @@
+/* Font Import */
+/* Family - Kumbh Sans, Weights: 400, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Designs were created to the following widths:
+  - Mobile: 375px
+  - Desktop: 1440px */
+
+/* Variables */
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Kumbh Sans",sans-serif;
+  font-weight: 400;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+img {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Mobile Layout */
+body {
+  background-color: var(--Dark-cyan);
+  background-image: url(./assets/images/bg-pattern-top.svg), url(./assets/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+}
+.card {
+  width: 18.2rem;
+  height: 20.5rem;
+  border-radius: .5rem;
+
+  background-image: url(./assets/images/bg-pattern-card.svg);
+  background-size: 100% 7.78rem;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.content {
+  position: relative;
+  top: 5.7rem;
+  text-align: center;
+}
+.picture {
+  border: 0.3rem solid var(--White);
+  border-radius: 50%;
+  position: relative;
+  top: 4.4rem;
+}
+.name {
+  font-weight: 700;
+  letter-spacing: .01rem;
+  word-spacing: -.02px;
+  margin-bottom: .28rem;
+}
+.age {
+  margin-left: 0.22rem;
+}
+.city {
+  font-size: .78rem;
+  margin-bottom: 1.2rem;
+}
+hr {
+  border-top: 0.05rem solid lightgray;
+  margin-bottom: 1.3rem;
+  margin-inline: .2rem;
+}
+.foot-grid {
+  display: flex;
+  justify-content: center;
+  margin-left: 1.56rem;
+  margin-right: 2rem;
+  gap: .67rem;
+} 
+.number {
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: .05rem;
+}
+.text {
+  font-size: .56rem;
+  letter-spacing: 0.09rem;
+}
+
+/* Media Query */
+@media (min-width: 33rem) {
+  .card {
+    width: 19.4rem;
+  }
+}
